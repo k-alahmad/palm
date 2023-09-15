@@ -6,7 +6,9 @@ const HeaderComponent =
     ? lazy(() => import("./HeaderT1"))
     : systemSettings.header.template == 2
     ? lazy(() => import("./HeaderT2"))
-    : systemSettings.header.template == 3 && lazy(() => import("./HeaderT3")));
+    : systemSettings.header.template == 3
+    ? lazy(() => import("./HeaderT3"))
+    : systemSettings.header.template == 4 && lazy(() => import("./HeaderT4")));
 const Header = () => {
   return (
     HeaderComponent && (

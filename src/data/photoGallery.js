@@ -73,23 +73,5 @@ export const data = {
         I16,
       ],
     },
-    {
-      type: [
-        { lng: "ar", value: "Exteriors" },
-        { lng: "en", value: "Exteriors" },
-        { lng: "fa", value: "Exteriors" },
-        { lng: "ru", value: "Экстерьеры" },
-      ],
-      imgs: [E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11, E12, E13, E14, E15],
-    },
-    {
-      type: [
-        { lng: "ar", value: "Amenities" },
-        { lng: "en", value: "Amenities" },
-        { lng: "fa", value: "Amenities" },
-        { lng: "ru", value: "Удобства" },
-      ],
-      imgs: [A1, A2, A3, A4, A5],
-    },
   ],
 };

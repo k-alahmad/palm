@@ -20,9 +20,13 @@ const NavBarT2 = () => {
   const dispatch = useDispatch();
 
   const listenScrollEvent = (event) => {
-    if (document.documentElement.scrollTop < 180) {
+    if (
+      document.documentElement.scrollTop < systemSettings.navBarColorChangePX
+    ) {
       return setHeader("transparent");
-    } else if (document.documentElement.scrollTop > 180) {
+    } else if (
+      document.documentElement.scrollTop > systemSettings.navBarColorChangePX
+    ) {
       return setHeader("white");
     }
   };
