@@ -40,21 +40,89 @@ import A3 from "../assets/images/amenities/3.webp";
 import A4 from "../assets/images/amenities/4.webp";
 import A5 from "../assets/images/amenities/5.webp";
 export const data = {
-	title: [
-		{ lng: "ar", value: "Photo Gallery" },
-		{ lng: "en", value: "Photo Gallery" },
-		{ lng: "fa", value: "Photo Gallery" },
-		{ lng: "ru", value: "Фотогалерея" },
-	],
-	navBtns: [
-		{
-			type: [
-				{ lng: "ar", value: "Interiors" },
-				{ lng: "en", value: "Interiors" },
-				{ lng: "fa", value: "Interiors" },
-				{ lng: "ru", value: "интерьеры" },
-			],
-			imgs: [E1, E2, E3, E4, E5, E6, E7],
-		},
-	],
+  title: [
+    { lng: "ar", value: "Photo Gallery" },
+    { lng: "en", value: "Photo Gallery" },
+    { lng: "fa", value: "Photo Gallery" },
+    { lng: "ru", value: "Фотогалерея" },
+  ],
+  navBtns: [
+    {
+      type: [
+        { lng: "ar", value: "Interiors" },
+        { lng: "en", value: "Interiors" },
+        { lng: "fa", value: "Interiors" },
+        { lng: "ru", value: "интерьеры" },
+      ],
+      imgs: [
+        {
+          img: E1,
+          text: [
+            {
+              lng: "en",
+              value:
+                "Image 1 and this may be a bit long, maybe very long text we'll never know!",
+            },
+            { lng: "ar", value: "الصورة 1" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E2,
+          text: [
+            { lng: "en", value: "Image 2" },
+            { lng: "ar", value: "الصورة 2" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E3,
+          text: [
+            { lng: "en", value: "Image 3" },
+            { lng: "ar", value: "الصورة 3" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E4,
+          text: [
+            { lng: "en", value: "Image 4" },
+            { lng: "ar", value: "الصورة 4" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E5,
+          text: [
+            { lng: "en", value: "Image 5" },
+            { lng: "ar", value: "الصورة 5" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E6,
+          text: [
+            { lng: "en", value: "Image 6" },
+            { lng: "ar", value: "الصورة 6" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+        {
+          img: E7,
+          text: [
+            { lng: "en", value: "Image 7" },
+            { lng: "ar", value: "الصورة 7" },
+            { lng: "fa", value: "Photo Gallery" },
+            { lng: "ru", value: "Фотогалерея" },
+          ],
+        },
+      ],
+    },
+  ],
 };

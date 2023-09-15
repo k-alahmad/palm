@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import { data } from "../../../../../data/photoGallery";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import useWindowDimensions from "../../../../../hooks/screenDimentions";
+import { useLocation } from "react-router-dom";
 const PhotoGalleryImagesSlider = ({ sliderRef }) => {
+  const location = useLocation();
   const { width } = useWindowDimensions();
   const [currentSlide, setCurrentSlide] = useState(0);
   function SampleNextArrow({ onClick }) {
@@ -29,7 +31,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
   return (
     <div
       style={{
-        width: width - (width * 0.5) / 100,
+        width: width - (width * 0.1) / 100,
         maxWidth: "1920px",
       }}
     >
@@ -69,18 +71,21 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
                     key={idx}
                   >
                     <img
-                      src={item}
+                      src={item.img}
                       className={`h-full w-full object-cover transition-all duration-500`}
                       alt={"Gallery " + idx}
                     />
                     <div
                       className={`${
                         currentSlide == idx ? "scale-100" : "scale-0"
-                      } transition-all duration-500 flex justify-center items-center absolute p-4 lg:p-8 z-40 bg-white/40 backdrop-blur-[10px] text-primary text-center text-2xl rounded-2xl bottom-[10%] left-1/2 transform -translate-x-1/2`}
+                      } transition-all duration-500 flex justify-center items-center absolute p-4 lg:p-8 z-40 bg-white/40 backdrop-blur-[10px] text-primary text-center text-2xl rounded-2xl max-md:w-[90%] bottom-[2%] md:bottom-[10%] left-1/2 transform -translate-x-1/2`}
                     >
-                      <p className="w-3/4 ">
-                        any test can be writtien here it will descripe the image
-                        maybe?
+                      <p className="w-full md:w-3/4 ">
+                        {
+                          item.text.find(
+                            (x) => x.lng == location.pathname.substring(1)
+                          )?.value
+                        }
                       </p>
                     </div>
                   </div>

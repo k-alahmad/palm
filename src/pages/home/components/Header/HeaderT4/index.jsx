@@ -16,7 +16,7 @@ const HeaderT4 = () => {
           loop
           muted
           id="video"
-          className="absolute w-full h-full object-fill object-center"
+          className="absolute w-full h-full object-cover md:object-fill object-center"
         >
           <source src={data.video[0]} type="video/mp4" />
         </video>
