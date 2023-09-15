@@ -40,38 +40,21 @@ import A3 from "../assets/images/amenities/3.webp";
 import A4 from "../assets/images/amenities/4.webp";
 import A5 from "../assets/images/amenities/5.webp";
 export const data = {
-  title: [
-    { lng: "ar", value: "Photo Gallery" },
-    { lng: "en", value: "Photo Gallery" },
-    { lng: "fa", value: "Photo Gallery" },
-    { lng: "ru", value: "Фотогалерея" },
-  ],
-  navBtns: [
-    {
-      type: [
-        { lng: "ar", value: "Interiors" },
-        { lng: "en", value: "Interiors" },
-        { lng: "fa", value: "Interiors" },
-        { lng: "ru", value: "интерьеры" },
-      ],
-      imgs: [
-        I1,
-        I2,
-        I3,
-        I4,
-        I5,
-        I6,
-        I7,
-        I8,
-        I9,
-        I10,
-        I11,
-        I12,
-        I13,
-        I14,
-        I15,
-        I16,
-      ],
-    },
-  ],
+	title: [
+		{ lng: "ar", value: "Photo Gallery" },
+		{ lng: "en", value: "Photo Gallery" },
+		{ lng: "fa", value: "Photo Gallery" },
+		{ lng: "ru", value: "Фотогалерея" },
+	],
+	navBtns: [
+		{
+			type: [
+				{ lng: "ar", value: "Interiors" },
+				{ lng: "en", value: "Interiors" },
+				{ lng: "fa", value: "Interiors" },
+				{ lng: "ru", value: "интерьеры" },
+			],
+			imgs: [E1, E2, E3, E4, E5, E6, E7],
+		},
+	],
 };
