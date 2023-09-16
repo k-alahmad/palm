@@ -25,7 +25,6 @@ const HeaderT4 = () => {
 					autoPlay
 					loop
 					muted
-					playsinline
 					id='video'
 					className='absolute w-full h-full object-fill object-center lg:hidden'
 				>
