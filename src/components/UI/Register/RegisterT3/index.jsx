@@ -36,7 +36,7 @@ function RegisterT1({ modal }) {
       <div
         dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
         className={`md:grid md:grid-cols-12 bg-primary/50 ${
-          !modal && "px-[10%]"
+          !modal && "px-[5%] md:px-[10%]"
         }`}
       >
         <div
@@ -50,7 +50,7 @@ function RegisterT1({ modal }) {
             }`}
           >
             <div className="space-y-12">
-              <p className={`font-bold text-bigger xl:text-huge w-[70%]`}>
+              <p className={`font-bold text-bigger xl:text-huge md:w-[70%]`}>
                 {t(data.slogan)}
               </p>
               <p className="font-regular text-med">{t(data.subTitle)}</p>
