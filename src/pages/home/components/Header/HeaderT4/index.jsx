@@ -20,9 +20,7 @@ const HeaderT4 = () => {
 				>
 					<source src={data.video[0]} type='video/mp4' />
 				</video>
-				<div
-					dangerouslySetInnerHTML={{
-						__html: `
+
 				<video
 					autoPlay
 					loop
@@ -31,11 +29,9 @@ const HeaderT4 = () => {
 					id='video'
 					className='absolute w-full h-full object-fill object-center lg:hidden'
 				>
-					<source src=${data.video[1]} type='video/mp4' />
+					<source src={data.video[1]} type='video/mp4' />
 				</video>
-				`,
-					}}
-				/>
+
 				<div
 					className='h-full w-full bg-cover'
 					style={{
