@@ -16,9 +16,18 @@ const HeaderT4 = () => {
           loop
           muted
           id="video"
-          className="absolute w-full h-full object-cover md:object-fill object-center"
+          className="absolute w-full h-full object-cover md:object-fill object-center max-md:hidden"
         >
           <source src={data.video[0]} type="video/mp4" />
+        </video>
+        <video
+          autoPlay
+          loop
+          muted
+          id="video"
+          className="absolute w-full h-full object-cover md:object-fill object-center md:hidden"
+        >
+          <source src={data.video[1]} type="video/mp4" />
         </video>
         <div
           className="h-full w-full bg-cover"
@@ -27,9 +36,9 @@ const HeaderT4 = () => {
               "radial-gradient(105.51% 436.49% at 97.61% 8.38%, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.25) 100%)",
           }}
         >
-          <div className="h-full w-full relative">
+          {/* <div className="h-full w-full relative">
             <HeaderTextSlider />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
