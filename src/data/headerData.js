@@ -14,7 +14,7 @@ import area from "../assets/icons/area.png";
 import renewable from "../assets/icons/renewable.png";
 import paymentplan from "../assets/icons/book.svg";
 import beach from "../assets/icons/beach.svg";
-import V1920 from "../assets/videos/V1920.mp4";
+import V1920 from "../assets/videos/v1920.mp4";
 import VMobile from "../assets/videos/vMobile.mp4";
 export const data = {
   // this will be filled if the design is like southtown houses or jlt
