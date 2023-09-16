@@ -34,6 +34,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
         width: width - (width * 0.1) / 100,
         maxWidth: "1920px",
       }}
+      className="pb-10"
     >
       <Slider
         ref={sliderRef}

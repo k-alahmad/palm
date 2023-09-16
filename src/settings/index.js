@@ -80,7 +80,7 @@ export const systemSettings = {
   siteLocation: { status: false, template: 3 },
   floorPlan: { status: false, template: 3 },
   nearby: { status: false, template: 1 },
-  register: { status: true, template: 1 },
+  register: { status: true, template: 3 },
   brochure: { status: false, template: 3 },
   footer: { status: true },
 };
