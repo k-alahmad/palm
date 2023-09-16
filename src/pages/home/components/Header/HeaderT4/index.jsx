@@ -18,6 +18,7 @@ const HeaderT4 = () => {
           id="video"
           className="absolute w-full h-full object-fill object-center max-lg:hidden"
           src={data.video[0]}
+          playsInline
         />
 
         <video
@@ -27,6 +28,7 @@ const HeaderT4 = () => {
           id="video"
           className="absolute w-full h-full object-fill object-center lg:hidden"
           src={data.video[1]}
+          playsInline
         />
 
         <div
