@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { data } from "../../../../../data/photoGallery";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import useWindowDimensions from "../../../../../hooks/screenDimentions";
 import { useLocation } from "react-router-dom";
 const PhotoGalleryImagesSlider = ({ sliderRef }) => {
@@ -11,20 +12,20 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
   function SampleNextArrow({ onClick }) {
     return (
       <div
-        className="absolute bg-primary cursor-pointer z-30 right-[2%] bottom-[50%] rounded-full"
+        className="absolute bg-transparent backdrop-blur-[200px] cursor-pointer z-30 right-[2%] bottom-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowForward className="text-secondary text-[40px]" />
+        <FaAngleRight className="text-primary text-[40px]" />
       </div>
     );
   }
   function SamplePrevArrow({ onClick }) {
     return (
       <div
-        className="absolute bg-primary cursor-pointer z-30 left-[2%] bottom-[50%] rounded-full"
+        className="absolute bg-transparent backdrop-blur-[200px] cursor-pointer z-30 left-[2%] bottom-[50%] rounded-full"
         onClick={onClick}
       >
-        <MdArrowBack className="text-secondary text-[40px]" />
+        <FaAngleLeft className="text-primary text-[40px]" />
       </div>
     );
   }
