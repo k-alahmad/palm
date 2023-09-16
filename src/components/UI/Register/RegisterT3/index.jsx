@@ -10,6 +10,8 @@ import {
 import { data } from "../../../../data/registerData";
 import RegisterForm from "../../../Forms/RegisterForm";
 import { systemSettings } from "../../../../settings";
+import BG from "../../../../assets/images/External/3.webp";
+("");
 const SocialElement = ({ icon, name }) => {
 	return (
 		<div className='flex items-center'>
@@ -21,7 +23,7 @@ const SocialElement = ({ icon, name }) => {
 	);
 };
 
-function RegisterT3({ modal }) {
+function RegisterT1({ modal }) {
 	const { i18n, t } = useTranslation();
 	const downloadState = useSelector(selectDownloadState);
 	const registerState = useSelector(selectRegisterState);
@@ -30,9 +32,12 @@ function RegisterT3({ modal }) {
 	return (
 		<div
 			dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
-			className={`md:grid md:grid-cols-12 bg-transparent ${
+			style={{
+				backgroundImage: `url(${BG})`,
+			}}
+			className={`md:grid md:grid-cols-12 bg-transparent bg-cover ${
 				!modal && "py-28"
-			} bg-red-500`}
+			} bg-white`}
 		>
 			<div
 				className={` ${
@@ -51,23 +56,23 @@ function RegisterT3({ modal }) {
             Please Register to view all Rooms
           </div>
         )} */}
-				<div className='col-span-6 space-y-12 flex flex-col justify-between items-stretch'>
-					<div className='space-y-12'>
+				<div className='col-span-6 space-y-12 flex flex-col justify-between items-stretch '>
+					{/* <div className='space-y-12'>
 						<p className='font-bold text-bigger xl:text-huge text-primary  w-[70%]'>
 							{t(data.slogan)}
 						</p>
 						<p className='font-regular text-med text-primary'>
 							{t(data.subTitle)}
 						</p>
-					</div>
-					<div className='max-xl:hidden'>
+					</div> */}
+					{/* <div className='max-xl:hidden'>
 						<SocialElement
 							icon={<MdLocationOn className='text-primary' />}
 							name={t(data.address)}
 						/>
-					</div>
+					</div> */}
 				</div>
-				<div className='col-span-6 max-lg:pt-8'>
+				<div className='col-span-6 max-lg:pt-8 '>
 					<RegisterForm />
 				</div>
 				<div className='xl:hidden max-xl:mt-6'>
@@ -79,17 +84,17 @@ function RegisterT3({ modal }) {
 			</div>
 			{!modal && (
 				<div className={`col-span-4  ${modal && "max-md:hidden"}`}>
-					<img
+					{/* <img
 						src={data.photo}
 						alt='Register Image'
 						className={`w-full ${
 							!modal ? "h-[370px] sm:h-[500px]" : "md:h-full md:max-h-[500px]"
 						} object-cover object-center`}
-					/>
+					/> */}
 				</div>
 			)}
 		</div>
 	);
 }
 
-export default RegisterT3;
+export default RegisterT1;

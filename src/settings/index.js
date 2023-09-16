@@ -40,6 +40,7 @@
 // };
 
 export const systemSettings = {
+<<<<<<< HEAD
   darkMode: false,
   gridLines: false, // split landing page to lines
   backgroudLines: false,
@@ -83,6 +84,50 @@ export const systemSettings = {
   register: { status: true, template: 1 },
   brochure: { status: false, template: 3 },
   footer: { status: true },
+=======
+	darkMode: false,
+	gridLines: false, // split landing page to lines
+	backgroudLines: true,
+	navBarColorChangePX: 900,
+	// availableLanguages: [{ lng: "en", name: "English" }],
+	availableLanguages: [
+		{ lng: "en", name: "English" },
+		// { lng: "ru", name: "Russian" },
+		{ lng: "ar", name: "العربية" },
+		// { lng: "fa", name: "فارسی" },
+	],
+	//primary: "#1B1724",secondary: "#05AAE0",
+	registerModal: { status: true, popUpModalStartTime: 10000 },
+	colors: {
+		light: {
+			bg: "transparent",
+			primary: "#111E27",
+			secondary: "#D2D2D4",
+			third: "white",
+			fourth: "rgba(131, 131, 131, 1)",
+			fifth: "#AA8A3A",
+		},
+		dark: {
+			bg: "#1B1724",
+			primary: "#05AAE0",
+			secondary: "#2980B9",
+			third: "white",
+			fourth: "#1F5061",
+			fifth: "#f19148",
+		},
+	},
+	navbar: { status: true, template: 2 },
+	header: { status: true, template: 4 },
+	paymentPlan: { status: false, template: 3 },
+	about: { status: true, template: 3 },
+	photoGallery: { status: true, template: 3 },
+	siteLocation: { status: false, template: 3 },
+	floorPlan: { status: false, template: 3 },
+	nearby: { status: false, template: 1 },
+	register: { status: true, template: 3 },
+	brochure: { status: false, template: 3 },
+	footer: { status: true },
+>>>>>>> e3dd83daa5e25a0ca3a1f55326e29a64bfafb9b4
 };
 // ----- 330 Settings -----
 // export const systemSettings = {
@@ -126,5 +171,5 @@ export const systemSettings = {
 // };
 
 export default systemSettings.darkMode
-  ? systemSettings.colors.dark
-  : systemSettings.colors.light; // this is for tailwind since it only works with export default (module)
+	? systemSettings.colors.dark
+	: systemSettings.colors.light; // this is for tailwind since it only works with export default (module)
