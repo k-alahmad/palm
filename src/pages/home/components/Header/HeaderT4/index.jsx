@@ -11,23 +11,15 @@ const HeaderT4 = () => {
 				className=' bg-cover bg-right lg:bg-center bg-no-repeat h-screen w-full max-w-[1920px] top-0 left-0 fixed -z-40'
 				dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
 			>
-				<div
-					dangerouslySetInnerHTML={{
-						__html: `
-        <video
-          autoPlay
-          loop
-          muted
-          id="video"
-          className="absolute w-full h-full object-fill object-center max-lg:hidden"
-        >
-          <source src=${data.video[0]} type="video/mp4" />
-        </video> `,
-					}}
-				></div>
-				<div
-					dangerouslySetInnerHTML={{
-						__html: `
+				<video
+					autoPlay
+					loop
+					muted
+					id='video'
+					className='absolute w-full h-full object-fill object-center max-lg:hidden'
+				>
+					<source src={data.video[0]} type='video/mp4' />
+				</video>
 				<video
 					autoPlay
 					loop
@@ -35,11 +27,8 @@ const HeaderT4 = () => {
 					id='video'
 					className='absolute w-full h-full object-fill object-center lg:hidden'
 				>
-					<source src=${data.video[1]} type='video/mp4' />
+					<source src={data.video[1]} type='video/mp4' />
 				</video>
-        `,
-					}}
-				></div>
 				<div
 					className='h-full w-full bg-cover'
 					style={{
