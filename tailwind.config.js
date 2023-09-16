@@ -78,6 +78,7 @@ export default {
         event: "url(./src/assets/images/event.jpg)",
         print: "url(./src/assets/images/print.jpg)",
         t3Pattern: "url(./src/assets/images/lines.svg)",
+        t4Pattern: "url(./src/assets/images/palmPattern.png)",
       },
       backgroundColor: {
         redss:

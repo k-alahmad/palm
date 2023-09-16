@@ -34,7 +34,7 @@ const AboutUsT3 = () => {
           <img
             src={data.image}
             alt="About us"
-            className="object-contain w-full lg:h-full h-full md:h-[500px]"
+            className="object-contain w-full h-full"
           />
         </div>
       </div>

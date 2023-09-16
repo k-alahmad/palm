@@ -42,7 +42,8 @@
 export const systemSettings = {
   darkMode: false,
   gridLines: false, // split landing page to lines
-  backgroudLines: true,
+  backgroudLines: false,
+  palmPattern: true,
   navBarColorChangePX: 900,
   // availableLanguages: [{ lng: "en", name: "English" }],
   availableLanguages: [
