@@ -1,7 +1,7 @@
 import React from "react";
 import { data } from "../../../../../data/headerData";
 import { useTranslation } from "react-i18next";
-import HeaderTextSlider from "./HeaderTextSlider";
+// import HeaderTextSlider from "./HeaderTextSlider";
 const HeaderT4 = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -20,7 +20,6 @@ const HeaderT4 = () => {
           src={data.video[0]}
           playsInline
         />
-
         <video
           autoPlay
           loop
@@ -31,17 +30,17 @@ const HeaderT4 = () => {
           playsInline
         />
 
-        <div
+        {/* <div
           className="h-full w-full bg-cover"
           style={{
             background:
               "radial-gradient(105.51% 436.49% at 97.61% 8.38%, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.25) 100%)",
           }}
         >
-          {/* <div className="h-full w-full relative">
+          <div className="h-full w-full relative">
             <HeaderTextSlider />
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div>
     </>
   );
