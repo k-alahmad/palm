@@ -31,7 +31,7 @@ function RegisterT1({ modal }) {
 			style={{
 				backgroundImage: `url(${BG})`,
 			}}
-			className={`bg-fixed  bg-cover`}
+			className={`bg-fixed bg-center bg-cover`}
 		>
 			<div
 				dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
