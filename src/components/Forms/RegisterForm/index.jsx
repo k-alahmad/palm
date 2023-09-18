@@ -30,7 +30,7 @@ const CustomInput = ({
 			className={` ${
 				modal
 					? "border-primary border-b-[1px] text-primary"
-					: "border-none backdrop-blur-[200px] rounded-2xl shadow-2xl drop-shadow-2xl text-secondary"
+					: "border-none backdrop-blur-[400px] rounded-2xl shadow-2xl drop-shadow-2xl text-secondary"
 			} px-4 py-3 flex `}
 		>
 			{icon}
