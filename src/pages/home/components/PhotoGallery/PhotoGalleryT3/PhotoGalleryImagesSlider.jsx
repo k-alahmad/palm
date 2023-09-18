@@ -80,7 +80,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
                     <div
                       className={`${
                         currentSlide == idx ? "scale-100" : "scale-0"
-                      } transition-all duration-500 flex justify-center items-center absolute p-4 lg:p-8 z-40 bg-white/40 backdrop-blur-[10px] text-primary text-center text-2xl rounded-2xl max-md:w-[90%] bottom-[2%] md:bottom-[10%] left-1/2 transform -translate-x-1/2`}
+                      } transition-all duration-500 flex justify-center items-center absolute p-4 lg:p-8 z-40 bg-white/40 backdrop-blur-[10px] text-primary text-center text-md md:text-2xl rounded-2xl max-md:w-[90%] bottom-[2%] md:bottom-[10%] left-1/2 transform -translate-x-1/2`}
                     >
                       <p className="w-full md:w-3/4 ">
                         {
