@@ -19,7 +19,7 @@ const Home = () => {
 				}
 				canonicalLink={"/"}
 				keywords={
-					"Palm Jebel Ali, Dubai luxury island, Investment prospects, Unique lifestyle, 110 km coastline, Eco-friendly project, Sustainability commitment, 80 hotels and resorts, Seamless connectivity, Gateway bridges, AVA Real Estate, Nakheels, Palm Jumeirah, Dubai artificail islands, Dubai new palm, size of new palm, twice the size of palm jumeirah, hh sheikh mohammed bin rashid al maktoum palm jebel ali"
+					"Palm Jebel Ali, Dubai luxury island, Investment prospects, Unique lifestyle, 110 km coastline, Eco-friendly project, Sustainability commitment, 80 hotels and resorts, Seamless connectivity, Gateway bridges, AVA Real Estate, Nakheel, Palm Jumeirah, Dubai artificail islands, Dubai new palm, size of new palm, twice the size of palm jumeirah, hh sheikh mohammed bin rashid al maktoum palm jebel ali, Villas, Plot, Apartments, Off plan, water front, Sohba, Emaar, townhouse, Meraas, Dubai property, investment, Dubai Real Estate"
 				}
 			/>
 			<Header />

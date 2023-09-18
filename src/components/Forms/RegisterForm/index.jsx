@@ -61,7 +61,7 @@ const RegisterForm = ({ modal }) => {
 		emailjs
 			.sendForm(
 				"service_5wdnu6j",
-				"template_slqqcpm",
+				"template_0fecgqj",
 				form.current,
 				"sxh5TJan60LQqD6Sw",
 			)
@@ -79,7 +79,7 @@ const RegisterForm = ({ modal }) => {
 		let formData = new FormData(form.current);
 		try {
 			const response = await fetch(
-				"https://hooks.zapier.com/hooks/catch/12792925/39sj2ca/",
+				"https://hooks.zapier.com/hooks/catch/12792925/3r0kakh/",
 				{
 					method: "POST",
 					body: formData,
